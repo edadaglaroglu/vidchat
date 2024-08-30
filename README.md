@@ -33,20 +33,20 @@ Whisper is used to transcribe the audio from YouTube videos, converting spoken w
 
 1. videohelper.py 🎞️
 Handles video-related tasks, including:
-
 get_video_transcript(url): Transcribes the video at the provided URL and returns it as a document.
 get_videos_for_search_term(search_term, video_count, sorting_criteria): Searches YouTube and returns a list of videos based on your search criteria.
-2. raghelperr.py 🧩
-Manages the core RAG (Retrieval-Augmented Generation) process:
 
+3. raghelperr.py 🧩
+Manages the core RAG (Retrieval-Augmented Generation) process:
 ask_openai(prompt): Sends a prompt to GPT-4 and returns the response.
 rag_with_video_transcript(transcript_docs, prompt): Splits the transcript, retrieves relevant chunks, and generates an answer using GPT-4.
+
 3. appp.py 🛠️
 The main application file that:
-
 Builds the Streamlit Interface: Manages user interactions, including video search and Q&A.
 Handles Session Management: Ensures a smooth experience by caching video URLs and transcripts.
-4. youtubevideo.py 🎬
+
+5. youtubevideo.py 🎬
 Defines the YoutubeVideo class to encapsulate video details such as:
 video_id, video_title, video_url, channel_name, duration, publish_date.
 
